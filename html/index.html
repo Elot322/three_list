@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <head>
+    <style>
+      li {
+        list-style-type:  none;
+        margin-left: 9px;
+      }
+      .caret-down::before {
+        content: ">";
+        transform: rotate(90deg);
+        color: black;
+        display: inline-block;
+        margin-left: -9px;
+      }
+      .caret::before {
+        transform: rotate(360deg); /* код символа треугольника вниз */
+      }
+      .toogled {
+        display: block;
+      }
+      .close {
+        display: none;
+      }
+    </style>
+  </head>
+</head>
+<body>
+  <div id="tree"></div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
